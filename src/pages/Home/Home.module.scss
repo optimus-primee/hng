@@ -1,0 +1,70 @@
+.signupWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  img {
+    width: 50%;
+    height: 100vh;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center center;
+    @media (max-width: 7200px) {
+      display: none;
+    }
+  }
+  .signin_form {
+    width: 50%;
+    .error {
+      display: block;
+      text-align: right;
+      margin-top: -0.5rem;
+      right: 0;
+      color: red;
+    }
+
+    @media (max-width: 850px) {
+      width: 90%;
+    }
+    label {
+      input {
+        border: 1px solid pink;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        width: 100%;
+        display: block;
+        margin-top: 0.4rem;
+        margin-bottom: 1rem;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+
+    button {
+      width: 100%;
+      padding: 0.75rem 2rem;
+      font-size: 1.1rem;
+      font-family: inherit;
+      border: none;
+      background-color: none;
+      text-decoration: none;
+      background-color: yellowgreen;
+      color: white;
+      font-weight: bold;
+      border-radius: 0.5rem;
+      margin-top: 2.5rem;
+      cursor: pointer;
+    }
+    p {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 1rem;
+      font-size: 2rem;
+      font-family: 'Italianno', cursive;
+
+      @media (max-width: 700px) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
